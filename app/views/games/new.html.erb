@@ -1,0 +1,11 @@
+<h1>New games</h1>
+
+  <% @letters.each do |letter| %>
+  <% end %>
+</br>
+<p>What is the longest wxord you can find?</p>
+<form action="/score" method="post">
+<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <input type="text" name="attempt">
+  <input type="submit">
+</form>
